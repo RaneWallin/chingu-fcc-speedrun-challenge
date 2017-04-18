@@ -1,16 +1,8 @@
-# Visualize Data with a Scatterplot Graph
-
-
-## Objective
-
-Build an app that is functionally similar to this: https://codepen.io/FreeCodeCamp/full/ONxvaa/.
-
-## Requirements
-
-* User Story: I can see performance time visualized in a scatterplot graph.
-
-* User Story: I can mouse over a plot to see a tooltip with additional details.
-
-**Hint:** Here's a dataset you can use to build this: https://raw.githubusercontent.com/FreeCodeCamp/ProjectReferenceData/master/cyclist-data.json
+# Data Visualization Projects
 
 ## Notes
+
+* Use D3 for charting / graphing
+* Pick whichever frontend framework you prefer, try to stick to the same framwork across all projects (it'll make aggregating into a portfolio easier) - common choices are Angular 2, React, and Vue
+* Try to use a CSS preprocessor where it makes sense to do so - common choices are Sass/Scss, Less, and Stylus
+

@@ -1,0 +1,4 @@
+export const EDIT_RECIPE = 'EDIT_RECIPE';
+export const GET_RECIPES = "GET_RECIPES";
+export const DELETE_RECIPE = "DELETE_RECIPE";
+export const ACTIVATE_RECIPE = "ACTIVATE_RECIPE";

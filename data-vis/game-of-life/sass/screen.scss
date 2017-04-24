@@ -1,0 +1,155 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass";
+
+.default-grid {
+    height: 300px;
+    width: 500px;
+    @include box-shadow(pink -1px -1px 5px 1px,
+                        pink 1px 1px 5px 1px);
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.single-cell {
+  height: 3.33%;
+  width: 2%;
+  background: black;
+  box-sizing: border-box;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+  border-radius: 50%;
+  @include background-image(radial-gradient(1px 1px, #262626 2px, #0d0d0d 3px));
+  &.active {
+    @include background-image(radial-gradient(1px 1px, pink 2px, hotpink 3px));
+  }
+  &.old {
+    @include background-image(radial-gradient(1px 1px, #ff80c3 2px, #cc006d 3px));
+  }
+
+  body {
+    background: black;
+  }
+}
+
+.btn-group:active {
+  border: none;
+}
+
+
+
+.gol-container {
+  width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  justify-content: center;
+  margin-top: 50px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+ol {
+  list-style-type: upper-roman;
+  margin: 10px 0 10px 50px;
+}
+
+li {
+  margin: 10px 10px 0 0;
+}
+
+.instructions > h3 {
+  display: flex;
+  align-self: center;
+  font-size: x-large;
+}
+
+.instructions > hr {
+  width: 100%;
+  color: whitesmoke;
+}
+
+.instructions {
+  position: relative;
+  @include box-shadow(pink -1px -1px 5px 1px,
+          pink 1px 1px 5px 1px);
+  margin-top: 20px;
+  padding: 10px;
+  color: whitesmoke;
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+}
+
+.gol-controller {
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  position:relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+
+}
+
+.turn-viewer {
+  height: 100%;
+  width: 50px;
+  border: 1px pink double;
+  margin-left: auto;
+  background: dimgray;
+  color: pink;
+  text-align: center;
+}
+
+.turn-text {
+  margin: auto;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn {
+  padding: 5px;
+  height: 30px;
+  display: flex;
+  background: dimgray;
+  border: 1px pink solid;
+  color: pink;
+  float: left;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 10% 10% 0 0;
+  &:hover {
+    background: gray;
+    color: white;
+  }
+  &:visited {
+    color: pink;
+  }
+
+}
+
+p {
+  margin: 10px 0 0 10px;
+  color: whitesmoke;
+}
+
+a:visited {
+  color: whitesmoke;
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  flex-flow: column wrap;
+  align-items: center;
+}
